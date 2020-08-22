@@ -60,27 +60,6 @@ class App extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  // async componentDidMount() {
-  //   try {
-  //     const todos = await API.graphql(graphqlOperation(listTodos))
-  //     console.log('todos: ', todos)
-  //     this.setState({ todos: todos.data.listTodos.items })
-  //   } catch (e) {
-  //     console.log(e)
-  //   }
-
-  //   API.graphql(graphqlOperation(onCreateTodo)).subscribe({
-  //     next: (eventData) => {
-  //       console.log('eventData: ', eventData)
-  //       const todo = eventData.value.data.onCreateTodo
-  //       const todos = [...this.state.todos.filter(content => {
-  //         return (content.title !== todo.title)
-  //       }), todo]
-  //       this.setState({ todos })
-  //     }
-  //   })
-  // }
-
   render() {
     return (
       <div className="App">

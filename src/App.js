@@ -72,7 +72,10 @@ class App extends Component {
         <input value={this.state.content} name="content" onChange={this.onChange}></input>
         </div>
         <button onClick={this.createTodo}>追加</button>
-        {this.state.todos.map((todo,idx) => {return <div key={idx}><div><br></br>タイトル: {todo.title}</div><div>内容: {todo.content}</div><br></br></div>})}
+        {this.state.todos.map((todo,idx) => {
+          return <div key={idx}><div><br></br>タイトル: {todo.title}</div>
+          <div>内容: {todo.content}</div><br></br>
+          </div>})}
       </div>
     )
   }
